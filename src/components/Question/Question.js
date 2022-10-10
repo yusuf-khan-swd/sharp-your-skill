@@ -16,7 +16,7 @@ const Question = ({ loadedQuestion }) => {
   };
 
   const handleShowAnswer = () => {
-    toast(correctAnswer);
+    toast.info(correctAnswer);
   }
 
 
