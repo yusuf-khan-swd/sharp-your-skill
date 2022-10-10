@@ -1,9 +1,11 @@
 import React from 'react';
+import parse from 'html-react-parser';
 
-const Question = ({ question }) => {
+const Question = ({ loadedQuestion }) => {
+  const { correctAnswer, question, options } = loadedQuestion;
   return (
     <div>
-      <h2>This is Question</h2>
+      {parse(question)}
     </div>
   );
 };

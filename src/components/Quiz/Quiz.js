@@ -7,8 +7,7 @@ const Quiz = () => {
   const { questions } = quiz;
   return (
     <div>
-      <h2>This is Quiz</h2>
-      {questions.map(question => <Question key={question.id} question={question}></Question>)}
+      {questions.map(question => <Question key={question.id} loadedQuestion={question}></Question>)}
     </div>
   );
 };
