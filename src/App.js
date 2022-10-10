@@ -1,5 +1,6 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Quiz from './components/Quiz/Quiz';
 import Topics from './components/Topics/Topics';
 import Main from './layout/Main';
 
