@@ -14,6 +14,11 @@ function App() {
           path: '/topics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Topics></Topics>
+        },
+        {
+          path: '/topic/:topicId',
+          loader: ({ params }) => fetch(`https://openapi.programming-hero.com/api/quiz/${params.topicId}`),
+          element: <Quiz></Quiz>
         }
       ],
     },
