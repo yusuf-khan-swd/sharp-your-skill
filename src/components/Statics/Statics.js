@@ -7,7 +7,9 @@ const Statics = () => {
   return (
     <div>
       <h2>This is static</h2>
-      <LineChart width={300} height={100} data={data}>
+      <LineChart width={900} height={400} data={data}>
+        <XAxis dataKey="name" />
+        <YAxis />
         <Line type="monotone" dataKey="total" stroke="#8884d8" strokeWidth={2} />
         <Tooltip></Tooltip>
       </LineChart>
