@@ -6,7 +6,7 @@ const Topic = ({ topic }) => {
   return (
     <div className="shadow-lg border rounded-lg pb-5 mx-auto text-center">
       <img
-        className="w-11/12 mx-auto mt-3 mb-3 rounded-lg border"
+        className="w-11/12 mx-auto mt-3 mb-3 rounded-lg border bg-slate-500"
         src={logo}
         alt=""
       />
