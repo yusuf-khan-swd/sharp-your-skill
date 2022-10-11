@@ -39,7 +39,7 @@ const Blog = () => {
           React <code className="text-red-600">useRef</code> Hook.{" "}
         </h2>
         <p>
-          The <code className="text-red-600">useRef</code> Hook allows you to
+          The <code className="text-red-600">useRef</code> Hook allows us to
           persist values between renders.
         </p>
         <p>
