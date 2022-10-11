@@ -1,5 +1,7 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import './App.css';
+import Blog from './components/Blog/Blog';
+import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
 import Statics from './components/Statics/Statics';
@@ -31,12 +33,16 @@ function App() {
           path: '/statics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statics></Statics>
+        },
+        {
+          path: '/blog',
+          element: <Blog></Blog>
         }
       ],
     },
     {
       path: '*',
-      element: <h1>404 Page not found</h1>
+      element: <Error></Error>
     }
   ]);
   return (
