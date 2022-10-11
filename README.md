@@ -6,10 +6,10 @@ This is the project live link [Sharp Your Skill](https://sharp-your-skill-assign
 
 - We make routes to navigate the website using `<NavLink></NavLink>` or `<Link></Link>`
 - Load quiz api using `loader` and use that data using `useLoaderData()`
-- When Start Practice button click we sent a dynamic routes with that particular topics id.
-- and using dynamic `{params}` and `:topicId` routes we load that particular topics quiz api.
+- When the Start Practice button is clicked we sent a dynamic route with that particular topic's id.
+- and using dynamic `{params}` and `:topicId` routes we load that particular topic's quiz api.
 
-## What feature are added ?
+## What features are added ?
 
 - We use `react-router-dom` to make dynamic routes.
 - `react-fontawesome` used for icons.
