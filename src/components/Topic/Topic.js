@@ -12,7 +12,7 @@ const Topic = ({ topic }) => {
       />
       <div className="ml-2 mb-2">
         <h5 className="font-bold text-3xl mb-3"> {name} </h5>
-        <p className="mb-3 text-slate-400 text-xl">Total Quiz: {total} </p>
+        <p className="mb-3 text-slate-400 text-xl">Total Quiz Available: {total} </p>
         <Link to={`/topic/${id}`}>
           <button className="bg-zinc-400 hover:bg-zinc-500 py-1 px-2 text-2xl rounded-md">
             Start Practice
