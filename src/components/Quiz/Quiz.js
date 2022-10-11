@@ -6,7 +6,7 @@ const Quiz = () => {
   const quiz = useLoaderData().data;
   const { questions } = quiz;
   return (
-    <div className='max-w-lg grid gap-5 mx-auto'>
+    <div className='max-w-lg grid gap-5 mx-auto my-8'>
       {questions.map(question => <Question key={question.id} loadedQuestion={question}></Question>)}
     </div>
   );
