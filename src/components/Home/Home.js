@@ -7,7 +7,7 @@ const Home = () => {
   const topics = useLoaderData().data;
 
   return (
-    <div>
+    <div className="mt-20">
       <div className="grid gap-4 grid-cols-1 md:grid-cols-2 my-8 p-4 m-2 border">
         <img className="order-last md:order-first rounded-sm" src={hero} alt="" />
         <div className="text-center">

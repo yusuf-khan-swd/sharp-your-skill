@@ -14,7 +14,7 @@ import {
 const Statics = () => {
   const data = useLoaderData().data;
   return (
-    <div className="mb-28">
+    <div className="mb-28 mt-12">
       <h2 className="text-3xl font-bold mb-8 text-center">
         Total <span className="text-red-500"> {data.length} </span> Question
         Statics{" "}
