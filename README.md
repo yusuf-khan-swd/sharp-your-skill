@@ -1,10 +1,11 @@
-# Getting Started with Create React App
+# Getting Started with Sharp Your Skill
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is the project live link [Sharp Your Skill](https://sharp-your-skill-assignment-9.netlify.app/).
 
-## Available Scripts
+## What is done in that project
 
-In the project directory, you can run:
+- We make routes to navigate the website using `<NavLink></NavLink>` or `<Link></Link>`
+- Load some api using `loader` and use that data using `useLoaderData()`
 
 ### `npm start`
 
