@@ -1,6 +1,7 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
 import logo from '../../images/logo.png';
+import './Header.css';
 
 const Header = () => {
   return (
@@ -13,7 +14,7 @@ const Header = () => {
         <p className="text-3xl">Sharp Your Skill</p>
       </Link>
       <nav>
-        <NavLink className={`mr-3 hover:text-zinc-400`} to="/home">
+        <NavLink className={`mr-3 hover:text-zinc-400 ${({ isActive }) => isActive ? 'active' : undefined}`} to="/home">
           Home
         </NavLink>
         <NavLink className={`mr-3 hover:text-zinc-400`} to="/topics">
