@@ -4,7 +4,7 @@ import Blog from './components/Blog/Blog';
 import Error from './components/Error/Error';
 import Home from './components/Home/Home';
 import Quiz from './components/Quiz/Quiz';
-import Statics from './components/Statics/Statics';
+import Statics from './components/Statistics/Statistics';
 import Topics from './components/Topics/Topics';
 import Main from './layout/Main';
 
@@ -36,7 +36,7 @@ function App() {
           element: <Quiz></Quiz>
         },
         {
-          path: '/statics',
+          path: '/statistics',
           loader: () => fetch('https://openapi.programming-hero.com/api/quiz'),
           element: <Statics></Statics>
         },

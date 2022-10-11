@@ -11,13 +11,13 @@ import {
   ResponsiveContainer,
 } from "recharts";
 
-const Statics = () => {
+const Statistics = () => {
   const data = useLoaderData().data;
   return (
     <div className="mb-28 mt-12">
       <h2 className="text-3xl font-bold mb-8 text-center">
-        Total <span className="text-red-500"> {data.length} </span> Question
-        Statics{" "}
+        Total <span className="text-red-500"> {data.length} </span>
+        Questions Statistics
       </h2>
       <div className="w-4/5 h-96 mx-auto">
         <ResponsiveContainer width="100%" height="100%">
@@ -40,4 +40,4 @@ const Statics = () => {
   );
 };
 
-export default Statics;
+export default Statistics;

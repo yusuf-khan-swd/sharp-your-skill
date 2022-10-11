@@ -19,8 +19,8 @@ const Header = () => {
         <NavLink className={`mr-3 hover:text-zinc-400`} to="/topics">
           Quiz Topics
         </NavLink>
-        <NavLink className={`mr-3 hover:text-zinc-400`} to="/statics">
-          Statics
+        <NavLink className={`mr-3 hover:text-zinc-400`} to="/statistics">
+          Statistics
         </NavLink>
         <NavLink className={`mr-3 hover:text-zinc-400`} to="/blog">
           Blog
