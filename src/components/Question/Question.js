@@ -32,10 +32,10 @@ const Question = ({ loadedQuestion }) => {
   }
 
   return (
-    <div>
-      <div className='flex'>
+    <div className='border shadow-md p-2 pb-4 rounded-lg'>
+      <div className='flex justify-between items-center'>
         {parse(question)}
-        <button onClick={handleShowAnswer}>
+        <button className='m-3' title='show the right answer' onClick={handleShowAnswer}>
           <FontAwesomeIcon icon={faEye} />
         </button>
       </div>
