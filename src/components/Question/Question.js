@@ -26,7 +26,9 @@ const Question = ({ loadedQuestion }) => {
   return (
     <div className="border shadow-md p-4 rounded-lg">
       <div className="flex justify-between items-center">
-        {parse(question)}
+        <div>
+          {parse(question)}
+        </div>
         <button
           className="m-3"
           title="show the right answer"
