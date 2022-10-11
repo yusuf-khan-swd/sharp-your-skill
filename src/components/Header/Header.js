@@ -6,7 +6,7 @@ const Header = () => {
   return (
     <div className="flex flex-col md:flex-row justify-between bg-gray-900 text-white items-center text-center p-5 mb-24">
       <Link
-        to={`/home`}
+        to={`/`}
         className="flex mb-3 flex-col md:flex-row justify-center items-center"
       >
         <img className="w-10 h-10 mr-3" src={logo} alt="" />
