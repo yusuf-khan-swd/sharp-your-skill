@@ -6,7 +6,7 @@ const Quiz = () => {
   const quiz = useLoaderData().data;
   const { questions } = quiz;
   return (
-    <div>
+    <div className='max-w-lg border'>
       {questions.map(question => <Question key={question.id} loadedQuestion={question}></Question>)}
     </div>
   );

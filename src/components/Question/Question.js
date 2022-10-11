@@ -31,7 +31,6 @@ const Question = ({ loadedQuestion }) => {
     toast.info(correctAnswer);
   }
 
-
   return (
     <div>
       <div className='flex'>
@@ -41,8 +40,7 @@ const Question = ({ loadedQuestion }) => {
         </button>
       </div>
       <div>
-        {/* {options.map((option, index) => <div onClick={handleCorrectAnswer} key={index}> {option} </div>)} */}
-        {options.map((option, index) => <Options handleCorrectAnswer={handleCorrectAnswer} key={index} option={option}></Options>)}
+        {options.map((option, index) => <Options handleCorrectAnswer={handleCorrectAnswer} question={question} key={index} option={option}></Options>)}
       </div>
       <ToastContainer
         position="top-right"
