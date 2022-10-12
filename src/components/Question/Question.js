@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faEye } from "@fortawesome/free-solid-svg-icons";
 import Options from "../Options/Options";
 
-const Question = ({ loadedQuestion }) => {
+const Question = ({ loadedQuestion, handleRightAnswer, handleWrongAnswer }) => {
   const { correctAnswer, question, options } = loadedQuestion;
 
   const handleCorrectAnswer = (event) => {
@@ -13,8 +13,10 @@ const Question = ({ loadedQuestion }) => {
     if (selected) {
       if (selected === correctAnswer) {
         toast.success("Right Answer");
+        handleRightAnswer(correctAnswer);
       } else {
         toast.warn("Wrong Answer!");
+        handleWrongAnswer(correctAnswer);
       }
     }
   };
