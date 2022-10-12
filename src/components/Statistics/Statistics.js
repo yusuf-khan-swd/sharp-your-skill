@@ -16,8 +16,8 @@ const Statistics = () => {
   return (
     <div className="mb-28 mt-12">
       <h2 className="text-3xl font-bold mb-8 text-center">
-        Total <span className="text-red-500"> {data.length} </span>
-        Questions Statistics
+        Available <span className="text-red-500"> {data.length} </span>
+        Topics Questions Statistics
       </h2>
       <div className="w-4/5 h-96 mx-auto">
         <ResponsiveContainer width="100%" height="100%">
