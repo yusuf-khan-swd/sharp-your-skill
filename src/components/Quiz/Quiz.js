@@ -1,4 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
+import React, { useState } from "react";
 import { useLoaderData } from "react-router-dom";
 import Question from "../Question/Question";
 
@@ -30,18 +30,18 @@ const Quiz = () => {
   };
 
   return (
-    <div className="relative">
+    <div className="bg-slate-100 pt-3">
       <img
         className="w-24 mx-auto mt-3 mb-3 rounded-lg border bg-slate-500"
         src={logo}
         alt=""
       />
       <h2 className="text-center text-5xl font-semibold">{name} Quiz</h2>
-      <div className="text-center mt-2 sticky top-1 max-w-sm mx-auto p-2 rounded-lg bg-slate-400">
+      <div className="text-center mt-2 sticky top-1 mx-auto max-w-xs p-2 rounded-lg bg-slate-400">
         <p>Total Right Answer: {rightAnswer.length} </p>
         <p>Total Wrong Answer: {wrongAnswer.length} </p>
       </div>
-      <div className="max-w-lg grid gap-5 mx-auto mt-8 mb-28">
+      <div className="max-w-lg grid gap-5 mx-auto mt-8 pb-28">
         {questions.map((question) => (
           <Question
             key={question.id}
